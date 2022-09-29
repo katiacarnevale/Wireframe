@@ -1,0 +1,172 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 91.99px;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(28,1fr);
+    grid-template-areas: 
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+    "Row1Box1 Row1Box1 Row1Box1 Row1Box1 Row1Box2 Row1Box2 Row1Box2 Row1Box2 Row1Box3 Row1Box3 Row1Box3 Row1Box3"
+
+    "Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box2 Row2Box2"
+    "Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box2 Row2Box2"
+    "Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box2 Row2Box2"
+    "Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box2 Row2Box2"
+    "Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box1 Row2Box2 Row2Box2"
+
+
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3Box1 Row3SB Row3SB Row3SB Row3SB"
+
+
+    "Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row3SB Row3SB Row3SB Row3SB"
+    "Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row4Box1 Row3SB Row3SB Row3SB Row3SB"
+
+    "Row5Box1 Row5Box1 Row5Box1 Row5Box2 Row5Box2 Row5Box2 Row5Box3 Row5Box3 Row5Box3 Row5Box4 Row5Box4 Row5Box4"
+    "Row5Box1 Row5Box1 Row5Box1 Row5Box2 Row5Box2 Row5Box2 Row5Box3 Row5Box3 Row5Box3 Row5Box4 Row5Box4 Row5Box4"
+    "Row5Box1 Row5Box1 Row5Box1 Row5Box2 Row5Box2 Row5Box2 Row5Box3 Row5Box3 Row5Box3 Row5Box4 Row5Box4 Row5Box4"
+    "Row5Box1 Row5Box1 Row5Box1 Row5Box2 Row5Box2 Row5Box2 Row5Box3 Row5Box3 Row5Box3 Row5Box4 Row5Box4 Row5Box4"
+
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer";
+    height: 100vh;
+    grid-gap: 20px;
+}
+
+.Row1Box1 {
+    grid-area: Row1Box1;
+    background-color:rgba(138, 186, 216, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row1Box2 {
+    grid-area: Row1Box2;
+    background-color: rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row1Box3 {
+    grid-area: Row1Box3;
+    background-color: rgba(164, 165, 117, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row2Box1 {
+    grid-area: Row2Box1;
+    background-color:  rgba(165, 95, 69, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row2Box2 {
+    grid-area: Row2Box2;
+    background-color:rgba(114, 50, 35, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row3Box1 {
+    grid-area: Row3Box1;
+    background-color:rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row3SB {
+    grid-area: Row3SB;
+    background-color: rgba(164, 165, 117, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row4Box1 {
+    grid-area: Row4Box1;
+    background-color:rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row5Box1 {
+    grid-area: Row5Box1;
+    background-color:rgba(138, 186, 216, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row5Box2 {
+    grid-area: Row5Box2;
+    background-color:  rgba(165, 95, 69, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Row5Box3 {
+    grid-area: Row5Box3;
+    background-color:rgba(114, 50, 35, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Row5Box4 {
+    grid-area: Row5Box4;
+    background-color:rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer {
+    grid-area: Footer;
+    background-color: rgba(164, 165, 117, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
