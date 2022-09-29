@@ -1,0 +1,142 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 91.99px;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(25,1fr);
+    grid-template-areas: 
+    "H H H H H H H H H H H H"
+    "H H H H H H H H H H H H"
+    "H H H H H H H H H H H H"
+    "H H H H H H H H H H H H"
+    "H H H H H H H H H H H H"
+
+
+    "TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2"
+    "TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2"
+    "TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2"
+    "TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2"
+    "TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar1 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2 TSbar2"
+
+
+    "TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN Aside Aside Aside"
+    "TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN Aside Aside Aside"
+    "TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN Aside Aside Aside"
+    "TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN Aside Aside Aside"
+    "TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN TMAIN Aside Aside Aside"
+
+
+    "BLSbar1 BLSbar1 BLSbar1 BLSbar1 BSbar2 BSbar2 BSbar2 BSbar2 BRSbar1 BRSbar1 BRSbar1 BRSbar1"
+    "BLSbar1 BLSbar1 BLSbar1 BLSbar1 BSbar2 BSbar2 BSbar2 BSbar2 BRSbar1 BRSbar1 BRSbar1 BRSbar1"
+    "BLSbar1 BLSbar1 BLSbar1 BLSbar1 BSbar2 BSbar2 BSbar2 BSbar2 BRSbar1 BRSbar1 BRSbar1 BRSbar1"
+    "BLSbar1 BLSbar1 BLSbar1 BLSbar1 BSbar2 BSbar2 BSbar2 BSbar2 BRSbar1 BRSbar1 BRSbar1 BRSbar1"
+    "BLSbar1 BLSbar1 BLSbar1 BLSbar1 BSbar2 BSbar2 BSbar2 BSbar2 BRSbar1 BRSbar1 BRSbar1 BRSbar1"
+
+    "BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN"
+    "BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN"
+    "BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN"
+    "BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN"
+    "BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN BMAIN"
+
+    "Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer Footer"
+    ;
+
+    height: 100vh;
+}
+
+.H {
+    grid-area: H;
+    background-color:rgba(138, 186, 216, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TSbar1 {
+    grid-area: TSbar1;
+    background-color: rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TSbar2 {
+    grid-area: TSbar2;
+    background-color: rgba(164, 165, 117, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TMAIN {
+    grid-area: TMAIN;
+    background-color:  rgba(165, 95, 69, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Aside {
+    grid-area: Aside;
+    background-color:rgba(114, 50, 35, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BLSbar1 {
+    grid-area: BLSbar1;
+    background-color:rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BSbar2 {
+    grid-area: BSbar2;
+    background-color: rgba(164, 165, 117, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BRSbar1 {
+    grid-area: BRSbar1;
+    background-color:rgba(127, 140, 81, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BMAIN {
+    grid-area: BMAIN;
+    background-color:rgba(138, 186, 216, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer {
+    grid-area: Footer;
+    background-color: rgba(114, 50, 35, 1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
